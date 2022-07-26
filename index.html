@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Q.1:</h1>
+    <h2>Zakat</h2>
+   Name of Person: <br> <input type="name" id="zakat" ><br>
+   Tolal Amount: <br> <input type="number"  id="totalAmount"><br>
+   
+   
+   <button onclick="let zakat=document.getElementById('zakat').value;
+   document.getElementById('heading').innerText=zakat;
+   ">Name</button>
+   <button onclick="let amount=document.getElementById('totalAmount').value;
+   let zakatAmount=amount/40;
+   document.getElementById('heading1').innerText=zakatAmount;
+   ">Calculate Zakat</button><br>
+   
+  
+
+    <h2 id="heading"></h2>
+<h2 id="heading1"></h2><br>
+
+
+<h1>Q.2:</h1>
+<h2>Share of "Miras"</h2><br>
+Total Amount: <br>
+<input type="number" id="share"><br><br>
+<button onclick="let totalAmount=document.getElementById('share').value;
+let wifeShare=totalAmount/8;
+let sonShare=totalAmount-wifeShare;
+let ful='Total amount is '+ totalAmount +' , the share of wife is '+ wifeShare+' and the share of son is '+sonShare;
+document.getElementById('heading3').innerText=ful;
+">Calculate Share</button>
+<p id="heading3"></p>
+
+<h1>Q.3:</h1>
+<h2>Profit</h2>
+Total Profit: <br>
+<input type="number" id="profit"><br>
+<button onclick="let totalProfit=getElementById('profit').value;
+let aliShare=35/100;
+let umarShare=65/100;
+let aliProfit=totalProfit*aliShare;
+let umarProfit=totalProfit*umarShare;
+let fu='The Total Profit is '+totalProfit+' ,the Profit of ali is '+aliProfit+' and the umar Profit is '+umarProfit;
+document.getElementById('heading4').innerText=fu;
+">Calculate Profit</button>
+<p id="heading4"></p>
+
+<h1>Q.4:</h1>
+<h2>"salah" of "Qaza"</h2>
+age: <br>
+<input type="number" id="salah"><br>
+<button onclick="let age=getElementById('salah').value;
+ 
+let qazaSalahYear=age-12;
+let totalDay=365*qazaSalahYear;
+let totalSalah=totalDay*6;
+let result='The total Salah Qaza is '+totalSalah;
+document.getElementById('heading5').innerText=result;
+">Salah</button>
+<p id="heading5"></p>
+
+
+
+</body>
+
+</html>
